@@ -1,5 +1,4 @@
-\
-    (function () {
+ (function () {
       "use strict";
 
       var ids = function (id) { return document.getElementById(id); };
