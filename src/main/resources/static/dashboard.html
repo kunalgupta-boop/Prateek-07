@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Secure account dashboard." />
+    <title>Dashboard | SecureAuth</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .dashboard-card { width:min(100%, 480px); margin:auto; padding:38px; border:1px solid rgba(215,224,236,.9); border-radius:16px; background:#fff; box-shadow:0 16px 38px rgba(50,80,120,.09); text-align:center; }
+      .dashboard-avatar { display:grid; width:68px; height:68px; margin:0 auto 16px; place-items:center; border-radius:50%; color:#2f9d73; background:#ecf9f3; font-size:28px; font-weight:800; }
+      .dashboard-email { margin:7px 0 22px; color:#7d899d; font-size:13px; }
+      .dashboard-info { margin:22px 0; padding:16px; border:1px solid #e2e8f0; border-radius:10px; background:#f8fbff; text-align:left; }
+      .dashboard-info strong { display:block; margin-bottom:4px; color:#43516a; font-size:11px; text-transform:uppercase; letter-spacing:.08em; }
+      .dashboard-info span { color:#26334b; font-size:13px; }
+      .dashboard-actions { display:grid; gap:10px; margin-top:22px; }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="logo" href="dashboard.html" aria-label="SecureAuth dashboard">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 3 19 6v5.1c0 4.4-2.8 7.2-7 8.9-4.2-1.7-7-4.5-7-8.9V6l7-3Z" fill="currentColor" opacity=".14" stroke="currentColor" stroke-width="1.6"/>
+              <path d="m8.8 11.8 2.1 2.1 4.4-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span>SecureAuth</span>
+        </a>
+        <span class="header-note">Account dashboard</span>
+      </header>
+
+      <main class="dashboard-card" aria-labelledby="dashboard-title">
+        <div class="dashboard-avatar" aria-hidden="true">✓</div>
+        <h1 id="dashboard-title">You’re signed in</h1>
+        <p class="intro">Your login session is active.</p>
+
+        <div class="dashboard-info">
+          <strong>Name</strong>
+          <span id="dashboard-name">Loading…</span>
+        </div>
+
+        <div class="dashboard-info">
+          <strong>Email</strong>
+          <span id="dashboard-email">Loading…</span>
+        </div>
+
+        <div class="dashboard-actions">
+          <button class="button primary" id="logout-button" type="button">Log Out</button>
+        </div>
+
+        <div id="dashboard-feedback" class="feedback" role="status" aria-live="polite"></div>
+      </main>
+
+      <footer class="page-footer">
+        <span>© 2026 SecureAuth</span>
+        <span><a href="#">Privacy</a><a href="#">Terms</a></span>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

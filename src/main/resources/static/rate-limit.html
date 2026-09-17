@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temporary login protection message." />
+    <title>Try again later | SecureAuth</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="rate-limit">
+    <div class="page-shell">
+      <header class="site-header"><a class="logo" href="index.html" aria-label="SecureAuth home"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 19 6v5.1c0 4.4-2.8 7.2-7 8.9-4.2-1.7-7-4.5-7-8.9V6l7-3Z" fill="currentColor" opacity=".14" stroke="currentColor" stroke-width="1.6"/><path d="m8.8 11.8 2.1 2.1 4.4-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>SecureAuth</span></a><span class="header-note">Login protection</span></header>
+      <main class="auth-card rate-card" aria-labelledby="page-title">
+        <div class="alert-icon" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#fff0ee"/><rect x="8.2" y="12.4" width="11.6" height="8.3" rx="2" stroke="#d65b50" stroke-width="1.4"/><path d="M10.7 12.4V10a3.3 3.3 0 0 1 6.6 0v2.4" stroke="#d65b50" stroke-width="1.4"/><path d="M14 15.3v2.1" stroke="#d65b50" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+        <p class="small-heading">TEMPORARY PAUSE</p><h1 id="page-title">Too many sign-in attempts</h1><p class="intro">For your security, login is temporarily paused. Please wait before trying again.</p>
+        <div class="timer-box"><span>You can try again in</span><strong id="countdown">14:32</strong></div>
+        <div class="tips"><p>While you wait:</p><div><span>1</span>Check that your email address is correct.</div><div><span>2</span>Use your saved password when you try again.</div></div>
+        <a class="button secondary" href="index.html">Back to Log In</a>
+        <p class="switch-page">Need an account? <a href="signup.html">Sign up</a></p>
+      </main>
+      <footer class="page-footer"><span>© 2026 SecureAuth</span><span><a href="#">Privacy</a><a href="#">Terms</a></span></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
