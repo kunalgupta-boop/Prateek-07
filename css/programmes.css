@@ -1,0 +1,31 @@
+/* Programme directory: static content, native links and responsive cards. */
+.programmes-intro { padding-block: 75px 55px; }
+.programmes-intro h1 { font-size: clamp(42px, 5.5vw, 73px); line-height: 1.06; letter-spacing: -.055em; margin-top: 20px; }
+.programmes-intro h1 em { font-family: var(--font-display); font-weight: 400; }
+.programmes-intro > p { max-width: 570px; margin-top: 25px; font-size: 15px; color: var(--muted); }
+.programme-categories { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 35px; }
+.programme-categories a { display: inline-flex; align-items: center; gap: 25px; border: 1px solid #c5cebc; border-radius: 5px; padding: 12px 17px; font-size: 12px; }
+.programme-categories a:hover { background: var(--green); color: var(--paper); }
+.programme-categories span { font-size: 10px; opacity: .7; }
+.programme-section { padding-block: 65px; }
+.programme-section:nth-of-type(even) { background: #fffef9; }
+.programme-section:nth-of-type(odd) { background: #edf0e5; }
+.programme-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.programme-card { display: flex; flex-direction: column; padding: 31px; background: var(--paper); border: 1px solid #d9dfd0; border-radius: 10px; scroll-margin-top: 115px; }
+.programme-card:target { border-color: var(--orange); box-shadow: 0 0 0 3px #ee792f18; }
+.programme-number { font-family: var(--font-display); font-style: italic; font-size: 20px; color: var(--orange-dark); margin-bottom: 18px; }
+.programme-card h3 { font-size: 27px; letter-spacing: -.035em; max-width: 420px; }
+.programme-card p { font-size: 13px; color: var(--muted); line-height: 1.9; margin-top: 18px; }
+.programme-card ul { padding-left: 17px; list-style: disc; margin-top: 18px; font-size: 12px; line-height: 1.9; }
+.programme-contact { display: inline-block; width: fit-content; font-size: 11px; font-weight: 600; margin-top: 24px; padding-bottom: 5px; border-bottom: 1px solid #afbda6; }
+.programme-contact:hover { color: var(--orange-dark); }
+@media (max-width: 760px) {
+  .programmes-intro { padding-block: 45px 40px; }
+  .programmes-intro > p { font-size: 13px; }
+  .programme-categories { gap: 9px; }
+  .programme-categories a { font-size: 11px; gap: 16px; }
+  .programme-section { padding-block: 45px; }
+  .programme-grid { grid-template-columns: 1fr; gap: 20px; }
+  .programme-card { padding: 25px; }
+  .programme-card h3 { font-size: 25px; }
+}
